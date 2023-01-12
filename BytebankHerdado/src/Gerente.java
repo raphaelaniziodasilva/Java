@@ -1,11 +1,5 @@
 public class Gerente extends Funcionario {
-
     private int senha;
-
-    public double getBonificacao() {
-        System.out.println("Chamando o método de bonificacao do GERENTE");
-        return super.getSalario();
-    }
 
     public void setSenha(int senha) {
         this.senha = senha;
@@ -17,6 +11,12 @@ public class Gerente extends Funcionario {
         } else {
             return false;
         }
+    }
+
+    public double getBonificacao() {
+        System.out.println("Chamando o método de bonificacao do GERENTE");
+        // usamos o super para poder conseguir pegar o metodo da classe pai
+        return super.getSalario();
     }
 
 }
