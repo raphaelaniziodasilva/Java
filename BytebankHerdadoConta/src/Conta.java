@@ -1,3 +1,5 @@
+// classe abstract não pode criar objetos ou instanciar essa classe porém so vai poder instanciar e criar objetos dos
+// filhos dessa classe ou seja as classes que herdam dessa classe
 public abstract class Conta {
     protected double saldo;
     private int agencia;
