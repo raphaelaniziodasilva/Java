@@ -14,6 +14,9 @@ public class TestaMetodo {
         contaDoRapha.sacar(49);
         System.out.println(contaDoRapha.titular + " R$:" + contaDoRapha.saldo);
 
+        Conta anderson = new Conta();
+
+
         // criando uma outra conta poder fazer a transferencia
         Conta contaDaLeida = new Conta();
         // adicionando o titular
