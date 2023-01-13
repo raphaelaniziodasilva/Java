@@ -3,8 +3,10 @@
 // Intarface e uma classe abstrata com todos os metdos abstratos. Dentro da interface não existe nada concreto
 // concreto são os atributos que recebem valor também são os metodos que tem implementações
 // na interface todos os metodos são abstratos, deixamos somente as assinaturas dos metodos
+// interface não e para reutilização de codigo e sim uma alternativa para o polymorfismo
 
 public abstract interface Autenticado {
+    // na interface so define metodos que assinam contratos que a interface precisa implementar
 
     public void setSenha(int senha);
 
