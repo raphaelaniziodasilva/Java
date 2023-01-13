@@ -1,13 +1,10 @@
 public class TesteFuncionario {
     public static void main(String[] args) {
-        Gerente nico = new Gerente();
-        nico.setNome("Ichigo Kurosaki");
-        nico.setCpf("223355646-9");
-        nico.setSalario(2600.00);
+        Gerente ichigo = new Gerente("Kurosaki Ichigo", "12569811116",458);
+        Designer nico = new Designer("nico", "12567771116",48);
 
-        System.out.println(nico.getNome());
-        System.out.println(nico.getBonificacao());
+        System.out.println(ichigo.getNome());
+        System.out.println(ichigo.getBonificacao());
 
-        //nico.salario = 300.0;
     }
 }
