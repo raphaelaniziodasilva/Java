@@ -2,8 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Java Itau" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/bytebank-herdado" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/bytebank-herdado-conta" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java-pilha" vcs="Git" />
   </component>
 </project>
