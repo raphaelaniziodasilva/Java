@@ -1,4 +1,6 @@
-public class Cliente {
+package modelo; // pasta modelo
+
+    public class Cliente {
     private String nome;
     private String cpf;
     private String profissao;

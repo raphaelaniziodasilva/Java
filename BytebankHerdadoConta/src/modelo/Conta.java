@@ -1,5 +1,11 @@
-// classe abstract não pode criar objetos ou instanciar essa classe porém so vai poder instanciar e criar objetos dos
-// filhos dessa classe ou seja as classes que herdam dessa classe
+package modelo; // pasta modelo
+
+/**
+ * Classe representa a moldura de uma conta
+ *
+ *  classe abstract não pode criar objetos ou instanciar essa classe porém so vai poder instanciar e criar objetos dos
+ *  filhos dessa classe ou seja as classes que herdam dessa classe
+ */
 public abstract class Conta {
     protected double saldo;
     private int agencia;
@@ -7,14 +13,24 @@ public abstract class Conta {
     private Cliente titular;
     private static int total = 0;
 
+    /**
+     * criando construtor para inicializar o objeto conta a partir da agencia e numero
+     * @param agencia
+     * @param numero
+     */
     public Conta(int agencia, int numero){
         Conta.total++;
-        //System.out.println("O total de contas é " + Conta.total);
+        //System.out.println("O total de contas é " + modelo.Conta.total);
         this.agencia = agencia;
         this.numero = numero;
         //this.saldo = 100;
         //System.out.println("Estou criando uma conta " + this.numero);
     }
+
+    /**
+     * criando metodos
+     * regras de negocios
+     */
 
     public double deposita(double valor){
         return this.saldo += valor;

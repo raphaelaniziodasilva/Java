@@ -1,3 +1,8 @@
+package teste; // pasta teste
+
+import modelo.ContaCorrente; // importando o arquivo ContaCorrente
+import modelo.ContaPoupanca; // importando o arquivo ContaPoupança
+
 public class TesteContas {
     public static void main(String[] args) {
         // criando conta corrente

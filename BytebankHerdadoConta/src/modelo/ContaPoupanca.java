@@ -1,3 +1,4 @@
+package modelo; // pasta modelo
 
 public class ContaPoupanca extends Conta {
 
