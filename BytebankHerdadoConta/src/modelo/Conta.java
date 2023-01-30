@@ -96,4 +96,23 @@ public abstract class Conta {
         return Conta.total;
     }
 
+    // fazendo a verificação se as contas são iguais
+    @Override
+    public boolean equals(Object ref) {
+
+        Conta outra = (Conta) ref;
+
+        // verificando a agencia de uma conta para outra
+        if(this.agencia != outra.agencia) {
+            return  false;
+        }
+        // verificando o numero de uma conta para outra
+        if(this.numero != outra.numero) {
+            return false;
+        }
+
+        // agencia e números são iguais vai retornar verdadeiro
+        return true;
+    }
+
 }
