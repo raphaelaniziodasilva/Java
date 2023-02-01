@@ -1,5 +1,6 @@
 package ArrayList.util;
 
+import modelo.Cliente;
 import modelo.Conta;
 import modelo.ContaCorrente;
 import modelo.ContaPoupanca;
@@ -34,8 +35,8 @@ public class OrdenandoListas {
             System.out.println(conta.getNumero());
         }
 
-        // criando o comparator que vai ser do tipo NumeroContaComparador
-        NumeroContaComparador comparator = new NumeroContaComparador();
+        // criando o comparador e instanciando a classe que tem o metodo de comparação implementado nela
+        ComparadorDeContaPorNumero comparator = new ComparadorDeContaPorNumero();
         // vamos usar na lista o metodo sort do java para ordenar a nossa lista
         lista.sort(comparator);
 
@@ -48,9 +49,10 @@ public class OrdenandoListas {
     }
 }
 
+// Ordenando a lista de conta pelo numero da conta. A ordenação vai começar pelo menor numero ate o maior
 // Vamos fazer a comparação de contas baseadas pelo o numero da conta, definindo qual conta vem antes da outra definindo
-// o criterio de comparação e vamos usar o metodo do java chamado Comparator que orecisamos importr do java.util.Comparator
-class NumeroContaComparador implements Comparator<Conta> {
+// o criterio de comparação e vamos usar o metodo do java chamado Comparator que precisamos importar do java.util.Comparator
+class ComparadorDeContaPorNumero implements Comparator<Conta> {
 
     // sobreescrevendo o metodo para fazer a comparação entre duas contas
     @Override
@@ -70,4 +72,5 @@ class NumeroContaComparador implements Comparator<Conta> {
         // se os numero das contas forem iguais vai retornar 0
         return 0;
     }
+    // vamos criar o nosso comparador e instanciar essa classe na classe que vai fazer a ordenação
 }
