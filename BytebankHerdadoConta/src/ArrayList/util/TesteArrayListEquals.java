@@ -3,12 +3,15 @@ package ArrayList.util;
 import modelo.Conta;
 import modelo.ContaCorrente;
 import java.util.ArrayList;
+import java.util.List;
 
 public class TesteArrayListEquals {
     public static void main(String[] args) {
-        // criando uma lista de array, vamos importar o ArrayList do pacote java.util
+        // criando uma lista de array, vamos importar o List e ArrayList do pacote java.util
+        // List quando um elemento de dentro do array for deletado ele ira puxar os demais elementos ocupando o espaço do elemento que foi deletado
+        // ArrayList vai funcionar como um array normal com todos os metodos
         // e dentro dessa lista vamos adicionar e remover as contas correntes e poupança
-        ArrayList<Conta> lista = new ArrayList<Conta>();
+       List<Conta> lista = new ArrayList<Conta>();
 
         // criando conta corrente
         Conta cc = new ContaCorrente(11, 27);
@@ -44,13 +47,5 @@ public class TesteArrayListEquals {
          *         igual = cc1.ehIgual(cc5);
          *         System.out.println(igual);
          */
-
-
-
-
-
-
-
-
     }
 }
